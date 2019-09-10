@@ -1,6 +1,7 @@
 # comparative-filmographies
-running using the Flask framework on ryanjackson.pythonanywhere.com
-enter one or two names into the search bar, and if they're both in the JSON file I have stored, then it'll show an interactive line chart of their filmographies, with the y-axis values being their audience scores on TMDB. EXAMPLE: https://imgur.com/a/2EpqBhp
+running using the Flask framework on ryanjackson.pythonanywhere.com.
+
+enter one or two names into the search bar, and if they're both in the JSON file that's stored, then it'll show an interactive line chart of their filmographies, with the y-axis values being their audience scores on TMDB. EXAMPLE: https://imgur.com/a/2EpqBhp
 
 Notes
 - I originally had it so that it made an API call for every request, but that took too much time, especially if they had a large filmography (Tom Hanks alone was around 13 seconds). So instead I put a bunch of the data in a JSON file. I have ~17,000 people and their filmographies in the that file, but some notable people are still missing (Jordan Peele for one). 
