@@ -66,9 +66,8 @@ def my_form_post():
 
             p.circle('x', 'y', size=20,source=source,alpha=0,hover_alpha=0.5)
             graph = save(p)
-            html = file_html(p,CDN,"plot")
-            #file1.close()
-            return str(html)
+            html = file_html(p,CDN,"plot") #the show(p) technically returns none, which is invalid. We have to return the
+            return str(html)               #html file it generates instead
 
 
 
