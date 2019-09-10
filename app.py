@@ -33,9 +33,9 @@ def my_form_post():
                 ans = json_data[text]
                 movies = ans[0]
                 moviescores = ans[1]
-                index = []
-                average = []
-                nintieth = []
+                index = [] #since this uses TMDB instead of Rotten Tomatoes, I put in thin lines across the graph at 6.0,
+                average = []#TMDB's average rating, and 7.6, a score that puts a film around the 90th percentile. These are
+                nintieth = []#for scale, since a "good score" on TMDB is a lot different than a "good score" on RT.
                 for i in range(len(movies)):
                     nintieth.append(7.5)
                 for i in range(len(movies)):
@@ -53,7 +53,7 @@ def my_form_post():
             ))
 
             TOOLTIPS = [
-            ('Film','@movies'),
+            ('Film','@movies'), #for the hover tools
             ('TMDB score','@scores')
             ]
 
@@ -179,7 +179,7 @@ def my_form_post():
             p.circle('x', 'y', size=20,source=source,alpha=0,hover_alpha=0.5)
             return str(html)
 
-    except KeyError:
+    except KeyError: #in case the name is misspelled and/or isn't in the data.json file
         return 'One of both of your inputs are either misspelled or not in the database!'
 
 
