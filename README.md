@@ -8,6 +8,7 @@ Notes
 - For directors I tried to make it so that they only get credit for films they had a significant hand in making. The API I used gave Quentin Tarantino "credit" for around 27 films, which obviously isn't very indicative of his filmography.
 - If you hover over a data point, it'll show the name of the film and the rating it received. If there are two points in the same area, it'll show both data points, like this: https://imgur.com/a/o2rxbLQ
 - names have to be spelled correctly, but it isn't case sensitive. "DaNieL dAy-LewiS" works, but "daniel day lewis" and "Daniel Day- Lewis " don't.
+
 Future Improvements
 - the domain, for one. I'm running it on a paid PythonAnywhere account, so that should be no problem
 - the ratings? I used TMDB ratings since it was the internal rating system for the API I used. Perhaps I'll make an option to see Rotten Tomatoes scores as well?
