@@ -1,14 +1,34 @@
-#bare bones basic homepage
 <!DOCTYPE html>
 <html>
+
+<head>
+    <title>Comparative filmographies</title>
+    <!-- Fonts and CSS Reset -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+
+    <!-- Mustard UI -->
+    <link rel="stylesheet" href="https://unpkg.com/mustard-ui@latest/dist/css/mustard-ui.min.css">
+</head>
+
 <body>
+    <div class="container">
+        <div class="container-small">
+            <h1>Comparative filmographies</h1>
 
-<form method='POST'>
-Actor/Filmmaker #1: <input type="text" name="FirstName">
-Actor/Filmmaker #2 (optional): <input type="text" name="LastName">
-<input type="submit" value="Submit">
-</form>
-
-
+            <form method='POST'>
+                <div class="form-control">
+                    <label for="firstName">Actor/Filmmaker #1:</label>
+                    <input type="text" name="FirstName" id="firstName">
+                </div>
+                <div class="form-control">
+                    <label for="lastName">Actor/Filmmaker #2 (optional):</label>
+                    <input type="text" name="LastName" id="lastName">
+                </div>
+                <button type="submit" class="button-primary">Submit</button>
+            </form>
+        </div>
+    </div>
 </body>
+
 </html>
