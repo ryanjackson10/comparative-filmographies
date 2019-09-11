@@ -16,5 +16,6 @@ Future Improvements
 - add more names to the JSON file?
 - When you hover on the line where there's no data it shows this: https://imgur.com/a/Xq1N4bB
 - possibly a Google-style dropdown search bar to prevent misspellings
+
 Updates
 -9/11/19 - Birion (https://github.com/Birion) was kind enough to sparse up the my-form.html file. The homepage is all the more aesthetic.
