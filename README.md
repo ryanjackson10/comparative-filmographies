@@ -19,4 +19,4 @@ Future Improvements
 
 Updates
 - 9/11/19 - Birion (https://github.com/Birion) was kind enough to sparse up the my-form.html file. The homepage is all the more aesthetic.
-- moved my-form.html to the templates folder, which is where Flask looks when rendering HTML templates.
+- 9/23/19 - moved my-form.html to the templates folder, which is where Flask looks when rendering HTML templates.
